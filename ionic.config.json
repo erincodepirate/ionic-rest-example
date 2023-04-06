@@ -1,0 +1,7 @@
+{
+  "name": "resty",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
