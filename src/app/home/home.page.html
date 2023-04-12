@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
       Fetch All Data
     </ion-title>
@@ -8,8 +8,8 @@
 
 <ion-content [fullscreen]="true">
   <ion-list *ngIf="data.length > 0">
-    <ion-item *ngFor="let item of data">
-      <ion-label>
+    <ion-item *ngFor="let item of data" class="ion-padding">
+      <ion-label class="ion-text-wrap">
         {{item?.title}}
       </ion-label>
     </ion-item>
