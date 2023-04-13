@@ -25,3 +25,16 @@
 #container a {
   text-decoration: none;
 }
+
+ion-toolbar {
+
+  ion-item {
+    ion-label {
+      margin-top:5vh;
+    }
+  }
+}
+
+.labelItem {
+  font-weight: bold;
+}
