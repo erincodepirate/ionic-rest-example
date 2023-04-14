@@ -3,6 +3,12 @@
     <ion-title>
       Fetch All Data
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-toggle color="secondary" (ionChange)="toggle($event)"></ion-toggle>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

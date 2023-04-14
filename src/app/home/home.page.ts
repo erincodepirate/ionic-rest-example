@@ -14,6 +14,12 @@ export class HomePage implements OnInit {
   data: any[] = [];
 
   constructor(public http: HttpClient) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let self = this;
+    prefersDark.addEventListener('change', function(event) {
+      console.log(event);
+       self.toggleDarkTheme(event);
+    });
   }
 
   ngOnInit(): void {
@@ -29,5 +35,15 @@ export class HomePage implements OnInit {
     error:e=> {
       console.log(e);
     }})
+  }
+
+  toggleDarkTheme(dark: any) {
+    
+  }
+
+
+  toggle(event: any) {
+    const check = event.detail.checked;
+    document.body.classList.toggle('dark', check)    
   }
 }
